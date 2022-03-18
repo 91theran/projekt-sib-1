@@ -50,7 +50,7 @@ import { ref } from 'vue'
 
 const linksList = [
   {
-    title: 'Förmulär',    
+    title: 'Formulär',    
     icon: 'school',
     link: '/form'
   },

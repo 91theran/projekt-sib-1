@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Statistik Sidan</h1>
+    <h1>Statistiksidan</h1>
     <ul>
         <li v-for="(form, index) in formList" :key="index">{{form.fullName}} - {{form.serialNumber}}</li>
     </ul>
