@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h1>Förmulär Sidan</h1>
+    <h1>Formulär</h1>
     <q-form ref="form" @submit.prevent="onSubmit" greedy>
         <q-input
           no-error-icon
@@ -9,7 +9,7 @@
           bg-color="white"
           class="q-pa-none"
           outlined          
-          :rules="[(v) => v.length > 0 || 'Inte en giltig serienummer']"
+          :rules="[(v) => v.length > 0 || 'Obligatoriskt fält']"
           placeholder="Serienummer"
         />
         <q-input
@@ -19,7 +19,7 @@
           bg-color="white"
           class="q-pa-none"
           outlined          
-          :rules="[(v) => v.length > 0 || 'Inte en giltig namn']"
+          :rules="[(v) => v.length > 0 || 'Obligatoriskt fält']"
           placeholder="Namn"
         />
         <q-input
@@ -29,7 +29,7 @@
           bg-color="white"
           class="q-pa-none"
           outlined          
-          :rules="[(v) => v.length > 0 || 'Inte en giltig produktionsorder']"
+          :rules="[(v) => v.length > 0 || 'Obligatoriskt fält']"
           placeholder="Produktionsorder"
         />
         <q-input
